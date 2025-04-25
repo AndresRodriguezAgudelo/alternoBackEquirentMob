@@ -1,0 +1,27 @@
+doctype html
+html
+  head
+    title #{title}
+    style(type="text/css").
+      html, body {
+        margin: 0;
+        padding: 0;
+        font-family: 'Roboto', sans-serif;
+        width: 100%;
+        height: 100%;
+        background-color: #202124; 
+      }
+      * {
+        box-sizing: border-box;
+      }
+      a {
+        text-decoration: none;
+      }
+  body
+    div.core(style="max-width: 500px; margin: 0 auto; background-color: #000;")
+      include logo.pug
+      div.content-block(
+        style="background-color: #202124; padding: 30px; text-align: center;"
+      )
+        block content
+      include footer.pug

@@ -1,0 +1,13 @@
+extends ../includes/default.pug
+
+block content
+  h2(style="font-size: 20px; margin-bottom: 15px; color: white;")
+    | Recupera tu cuenta
+  p(style="margin-bottom: 20px; color: white; font-size: 14px;")
+    | Hemos recibido una solicitud para recuperar tu cuenta. Si no fuiste tú, ignora este mensaje.
+  p(style="margin-bottom: 20px; color: white; font-size: 14px;")
+    | Para restablecer tu cuenta en Equirent Mobility, toma en cuenta el siguiente código y verifica tu identidad en la aplicación:
+  h1(style="font-size: 20px; margin-bottom: 15px; color: white;")
+    | #{tokens}
+  p(style="margin-bottom: 20px; color: white; font-size: 14px;")
+    | Si no solicitaste recuperar tu cuenta, por favor ignora este mensaje.

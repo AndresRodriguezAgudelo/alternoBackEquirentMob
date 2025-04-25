@@ -1,0 +1,27 @@
+doctype html
+html
+  head
+    title Correo electrónico verificado exitosamente
+    style.
+      body { font-family: Arial, sans-serif; text-align: center; padding: 50px; background-color: #205493; }
+      .container { max-width: 400px; margin: 0 auto; padding: 40px; border-radius: 8px; color: white; }
+      .icon-container { display: flex; justify-content: center; margin-bottom: 20px; }
+      .icon { width: 80px; height: 80px; background-color: #5cb85c; border-radius: 50%; display: flex; align-items: center; justify-content: center; }
+      .icon svg { width: 50px; height: 50px; fill: #d4f4dd; }
+      .message { font-size: 24px; font-weight: bold; }
+      .subtext { font-size: 16px; margin-top: 10px; }
+  
+  body
+    .container
+      .icon-container
+        .icon
+          svg(viewBox="0 0 24 24")
+            path(d="M9 16.2l-4.2-4.2L3 13l6 6 12-12-1.8-1.8L9 16.2z")
+      .message ¡Correo electrónico verificado exitosamente!
+
+    script.
+      // Previene que el usuario regrese a la página anterior
+      history.pushState(null, null, location.href);
+      window.onpopstate = function() {
+        history.pushState(null, null, location.href);
+      };

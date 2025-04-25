@@ -1,0 +1,21 @@
+doctype html
+html
+  head
+    title Error en validación
+    style.
+      body { font-family: Arial, sans-serif; text-align: center; padding: 50px; background-color: #205493; }
+      .container { max-width: 400px; margin: 0 auto; padding: 40px; border-radius: 8px; color: white; }
+      .icon-container { display: flex; justify-content: center; margin-bottom: 20px; }
+      .icon { width: 80px; height: 80px; background-color: #d9534f; border-radius: 50%; display: flex; align-items: center; justify-content: center; }
+      .icon svg { width: 50px; height: 50px; fill: #f7c6c5; }
+      .message { font-size: 24px; font-weight: bold; }
+      .subtext { font-size: 16px; margin-top: 10px; }
+
+  body
+    .container
+      .icon-container
+        .icon
+          svg(viewBox="0 0 24 24")
+            path(d="M12 10.586L16.95 5.636l1.414 1.414L13.414 12l4.95 4.95-1.414 1.414L12 13.414l-4.95 4.95-1.414-1.414L10.586 12 5.636 7.05l1.414-1.414L12 10.586z")
+      .message La contraseña no pudo ser actualizada. Revisa los datos ingresados.
+      .subtext Si el problema persiste, contacta a soporte técnico.

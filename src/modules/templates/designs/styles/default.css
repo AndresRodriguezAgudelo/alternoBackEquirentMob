@@ -1,0 +1,106 @@
+* {
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body, html {
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    background-color: #202124; 
+}
+
+body .core {
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.25); 
+    border-radius: 8px; 
+}
+
+body .core .main {
+    background-color: #013a6b;
+    position: relative;
+    padding: 30px 45px;
+    min-height: 400pt;
+    max-width: 500pt;
+    border-radius: 8px 8px 0 0; 
+}
+
+body .core .main .title {
+    margin-bottom: 15px;
+    color: #ffffff;
+    text-align: center;
+    font-size: 20pt; 
+}
+
+body .core .main .logotype {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    width: 100%;
+}
+
+body .core .main .logotype img {
+    margin-bottom: 20px;
+    width: 180pt;
+    height: auto;
+}
+
+body .core .main .content {
+    padding: 20px 0;
+    font-size: 14pt;
+    color: #ffffff; 
+    width: 100%;
+    text-align: center; 
+}
+
+body .core .main .content span {
+    margin-bottom: 15pt;
+    text-align: center;
+    display: block;
+}
+
+body .core .main .content a {
+    text-decoration: none;
+    color: #ffffff; 
+    background-color: #007bff; 
+    padding: 10px 20px;
+    border-radius: 4px;
+    font-size: 14pt;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+body .core .footer {
+    /* Si deseas cambiar el color de fondo a azul oscuro */
+    background-color: #0e5d9d !important;
+    max-width: 500pt;
+    padding: 20px;
+    border-radius: 0 0 8px 8px;
+  }
+  
+  /* Forzamos el color blanco en los elementos */
+  body .core .footer,
+  body .core .footer span,
+  body .core .footer p,
+  body .core .footer a,
+  body .core .footer .contact-info p {
+    color: #ffffff !important; 
+    text-align: left; /* Ajusta si necesitas centrar o alinear a la izquierda */
+    text-decoration: none; /* Evita subrayados en links si deseas */
+  }
+  
+
+
+.white {
+    color: white;
+}
+
+.bgBlue {
+    background-color: #013a6b; 
+    height: 100%;
+    width: 100%;
+}
